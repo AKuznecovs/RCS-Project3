@@ -40,8 +40,10 @@ main h1{
     }
 
     .navContainer {
+        width: 100%;
         padding: 2%;
         min-height: 150px;
+        flex-wrap: wrap;
         flex-direction: column;
     }
 }    
@@ -158,7 +160,6 @@ main h1{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    flex-wrap: wrap;
     background-color: #4096ee;
     font-size: 1.5em;
     border-radius: 4px;
