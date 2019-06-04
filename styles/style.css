@@ -21,7 +21,7 @@ main h1{
     width: 100%;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr) ) ;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr) ) ;
     grid-gap: 10px;
     align-content: center;
     justify-items: center;
@@ -33,6 +33,20 @@ main h1{
     padding: 0;
   
 }
+
+@media (max-width: 576px) {
+    #container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .navContainer {
+        padding: 2%;
+        min-height: 150px;
+        flex-direction: column;
+    }
+}    
+
+/* FIZBUZ class */
 
 .fizbuz {
     display: flex;
@@ -58,6 +72,8 @@ main h1{
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
 
+/* FIZ class */
+
 .fiz {
     display: flex;
     align-items: center;
@@ -81,6 +97,8 @@ main h1{
 .fiz:hover {
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
+
+/* BUZ class */
 
 .buz {
     display: flex;
@@ -106,6 +124,8 @@ main h1{
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
 
+/* NUM class */
+
 .num {
     display: flex;
     align-items: center;
@@ -130,19 +150,21 @@ main h1{
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
 
+/* Navigation */
+
 .navContainer {
     width: 100%;
     height: 80px;
     display: flex;
     align-items: center;
-    flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
     background-color: #4096ee;
     font-size: 1.5em;
     border-radius: 4px;
   }
   
-   input, button {
+input, button {
       font-size: 1em;
       border-radius: 5px;
   }
@@ -151,3 +173,5 @@ main h1{
     input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     }
+
+    
