@@ -25,7 +25,6 @@ const create = function () {            //Creating function that will generate 1
         if (i < inputMin.value || i > inputMax.value) {
             newDiv.style = "display: none";
         } else {
-    
             if (i % 3 === 0 && i % 5 === 0) {                              
                 newPar.appendChild(document.createTextNode('FIZZ BUZZ'));
                 main.appendChild(newDiv).setAttribute("class", "fizbuz");   // this adds class divs
