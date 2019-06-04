@@ -1,2 +1,2 @@
-# RCS-Project3
-RCS WEB Bootcamp - Homework 3, FizzBuzz JS page.
+# RCS-Project3 - "FIZZ BUZZ" page.
+RCS WEB Bootcamp - Homework 3, FizzBuzz JavaScript page.
