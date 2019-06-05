@@ -156,9 +156,7 @@ main h1{
     -webkit-appearance: none;
     }
 
-    .hidden{
-        display: none;
-    }
+
     
     #btnOne {
         background-color: white; 
@@ -189,3 +187,8 @@ main h1{
         color: black;
         border: 5px solid #a5c956;
       }
+
+.hidden {
+    display: none;
+
+}
