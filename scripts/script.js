@@ -15,26 +15,26 @@ const create = function () {            //Creating function that will generate 1
     };
 
     for (let i = 1; i <= 100; i++) {    //this line creates 100 divs and hides all that do not match input values. 
-    // for( i = inputMin.value; i <= inputMax.value; i++ ) {    // <--- 'UNcomment' this line below to create number of divs according to input values.
+    // for( i = inputMin.value; i <= inputMax.value; i++ ) { // <--- 'UNcomment' this line below to create number of divs according to input values.
         let newDiv = document.createElement("div");
         let newPar = document.createElement("p");
 
         newDiv.appendChild(newPar);
-        main.appendChild(newDiv).setAttribute("id", "div_" + i);        // giving "id" name to every div
+        main.appendChild(newDiv).setAttribute("id", "div_" + i);    // giving "id" name to every div
 
         if (i < inputMin.value || i > inputMax.value) {
             newDiv.style = "display: none";
         } else {
             if (i % 3 === 0 && i % 5 === 0) {                              
-                newPar.appendChild(document.createTextNode('FIZZ BUZZ'));
+                newPar.appendChild(document.createTextNode(i + ' = FIZZ BUZZ'));
                 main.appendChild(newDiv).setAttribute("class", "fizbuz");   // this adds class divs
 
             } else if (i % 3 === 0) {
-                newPar.appendChild(document.createTextNode('FIZZ'));
+                newPar.appendChild(document.createTextNode(i + ' = FIZZ'));
                 main.appendChild(newDiv).setAttribute("class", "fiz");
 
             } else if (i % 5 === 0) {
-                newPar.appendChild(document.createTextNode('BUZZ'));
+                newPar.appendChild(document.createTextNode(i + ' = BUZZ'));
                 main.appendChild(newDiv).setAttribute("class", "buz");
 
             } else {
@@ -104,15 +104,24 @@ create();
         create();
     };
 
-    
 
 
+// JQuery scripts for selecting divs according to class:
 
+    $(document).ready(function(){ $("#btnThree").click(function(){ 
+        $(".num, .buz, .fizbuz").toggle();
+      });
+    });
 
+    $(document).ready(function(){ $("#btnFour").click(function(){ 
+        $(".num, .fiz, .fizbuz").toggle();
+      });
+    });
 
-
-
-
+    $(document).ready(function(){ $("#btnFive").click(function(){ 
+        $(".num, .buz, .fiz").toggle();
+      });
+    });
 
 
 

@@ -7,6 +7,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='styles/style.css'>
     <script src='scripts/script.js' defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 </head>
 <body>
     <main>
@@ -14,11 +15,14 @@
         <div class="navContainer">
             
         
-                <label>Min number: </label><input type="number" name="field"  id="minInput"  min="1" max="99" onpaste="return false">
-                <label>Max number: </label><input type="number" name="field"  id="maxInput"  min="2" max="100" onpaste="return false">
+                <label>MIN number: </label><input type="number" name="field"  id="minInput"  min="1" max="99" onpaste="return false">
+                <label>MAX number: </label><input type="number" name="field"  id="maxInput"  min="2" max="100" onpaste="return false">
       
         <button id="btnOne">RESET</button>
         <button id="btnTwo">REFRESH</button>
+        <button id="btnThree">FIZZ</button>
+        <button id="btnFour">BUZZ</button>
+        <button id="btnFive">FIZZBUZZ</button>
         
         </div>
         <div id="container">
