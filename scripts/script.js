@@ -15,8 +15,10 @@ const create = function () {            //Creating function that will generate 1
         main.removeChild(main.firstChild);
     };
 
-    for (let i = 1; i <= 100; i++) {    //this line creates 100 divs and hides all that do not match input values. 
-    // for( i = inputMin.value; i <= inputMax.value; i++ ) { // <--- 'UNcomment' this line below to create number of divs according to input values.
+    //this line creates 100 divs and hides all that do not match input values.
+
+    for (let i = 1; i <= 100; i++) {     
+    // for( i = inputMin.value; i <= inputMax.value; i++ ) { // <--- 'UNcomment' this line to create divs according to input values.
         let newDiv = document.createElement("div");
         let newPar = document.createElement("p");
 
@@ -28,7 +30,7 @@ const create = function () {            //Creating function that will generate 1
         } else {
             if (i % 3 === 0 && i % 5 === 0) {                              
                 newPar.appendChild(document.createTextNode(i + ' = FIZZ BUZZ'));
-                main.appendChild(newDiv).setAttribute("class", "fizbuz");   // this adds class divs
+                main.appendChild(newDiv).setAttribute("class", "fizbuz");   // this adds class to divs
 
             } else if (i % 3 === 0) {
                 newPar.appendChild(document.createTextNode(i + ' = FIZZ'));
