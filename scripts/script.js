@@ -1,3 +1,4 @@
+
  
     const inputMin = document.getElementById("minInput");
     const inputMax = document.getElementById("maxInput");
